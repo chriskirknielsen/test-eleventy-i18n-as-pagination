@@ -1,0 +1,17 @@
+---js
+{
+    pagination: {
+        data: 'locales', // You could add your data directly here if you prefered
+        size: 1, // One page generated per language
+        alias: 'locale', // Provide the locale in the data cascade
+    },
+    layout: "layouts/about.njk",
+    eleventyComputed: {
+        permalink: (data) => `/${data.locale}/${data.about[data.locale].slug}/`, // Create the URL based on the locale and the slug for that locale
+        title: (data) => data.about[data.locale].title, // Grab content pieces
+        localisedContent: (data) => data.about[data.locale].content, // Grab content pieces
+    }
+}
+---
+
+{{ layoutContent | safe }}

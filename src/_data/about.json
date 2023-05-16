@@ -1,0 +1,12 @@
+{
+	"en": {
+		"slug": "about",
+		"title": "About",
+		"content": "Here is my localised content."
+	},
+	"fr": {
+		"slug": "a-propos",
+		"title": "À Propos",
+		"content": "Voici mon contenu localisé."
+	}
+}
