@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="{{ locale }}">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>À Propos</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="{{ 'home' | toLocaleUrl | url }}">🏠</a></li>
-                <li><a href="{{ 'about' | toLocaleUrl | url }}">ℹ️</a></li>
+                <li><a href="/fr/">🏠</a></li>
+                <li><a href="/fr/a-propos">ℹ️</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        {{ layoutContent | safe }}
+        
+<h1>À Propos</h1>
+
+<p>Voici mon contenu localisé.</p>
     </main>
 </body>
 </html>

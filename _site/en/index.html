@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="{{ locale }}">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="{{ 'home' | toLocaleUrl | url }}">🏠</a></li>
-                <li><a href="{{ 'about' | toLocaleUrl | url }}">ℹ️</a></li>
+                <li><a href="/en/">🏠</a></li>
+                <li><a href="/en/about">ℹ️</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        {{ layoutContent | safe }}
+        
+<h1>🏠 Home</h1>
+
+<p>This is what I call home.</p>
     </main>
 </body>
 </html>
